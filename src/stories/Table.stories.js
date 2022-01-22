@@ -1,27 +1,27 @@
-import React from "react";
-import { withKnobs, object } from "@storybook/addon-knobs";
-import Table from "../compoenents/Table";
+import React from 'react';
+import { withKnobs, object } from '@storybook/addon-knobs';
+import Table from '../compoenents/Table';
 
 export default {
-  title: "Table component",
+  title: 'Table component',
   component: Table,
   decorators: [withKnobs],
 };
 
 const data = [
   {
-    name: "Abdulazeez Abdulazeez",
-    course: "Water Resources and Environmental Engineering",
+    name: 'Shaarif Shahid',
+    course: 'Web And Mobile Application Development',
   },
-  { name: "Albert Einstein", course: "Physics" },
-  { name: "John Doe", course: "Estate Managment" },
-  { name: "Sigismund Freud", course: "Neurology" },
-  { name: "Leonhard Euler", course: "Mathematics" },
-  { name: "Ben Carson", course: "Neurosurgery" },
+  { name: 'Albert Einstein', course: 'Physics' },
+  { name: 'John Doe', course: 'Estate Managment' },
+  { name: 'Sigismund Freud', course: 'Neurology' },
+  { name: 'Leonhard Euler', course: 'Mathematics' },
+  { name: 'Ben Carson', course: 'Neurosurgery' },
 ];
 
 export function ShowStudentsData() {
-  return <Table data={object("data", data)} />;
+  return <Table data={object('data', data)} />;
 }
 
 export function EmptyData() {

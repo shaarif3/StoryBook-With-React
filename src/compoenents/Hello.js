@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
 
-export function IsLoading({ condition }) {
+export const IsLoading = ({ condition }) => {
   if (condition) {
     return <p> Currently Loading </p>;
   } else {
-    return <p> Here’s your content </p>;
+    return <p> Not Loading </p>;
   }
-}
+};
 
-export default function Hello({ name }) {
-  return <p>Hello {name}!, this is a simple hello world component</p>;
-}
+const Hello = ({ name }) => {
+  return <p>Hello {name}! , this is a simple hello world component</p>;
+};
+
+export default Hello;
